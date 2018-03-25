@@ -2,3 +2,5 @@
 
 import psutil
 print psutil.cpu_times()
+print psutil.cpu_count()
+print psutil.users()
