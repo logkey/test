@@ -2,43 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57c99131-af53-486f-bbc0-24aaa213f0ff" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy-api.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/python" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/python2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/python2.7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/include/python2.7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/UserDict.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/_abcoll.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/_weakrefset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/abc.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/codecs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/copy_reg.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/distutils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/distutils/distutils.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/encodings" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/fnmatch.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/genericpath.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/lib-dynload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/linecache.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/locale.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/no-global-site-packages.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/ntpath.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/orig-prefix.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/os.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/posixpath.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/re.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/site.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/sre.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/sre_compile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/sre_constants.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/sre_parse.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/stat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/types.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python2.7/warnings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib64" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,14 +14,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nmapp.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nmapp.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nmapp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+            <state relative-caret-position="450">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="e#37#48#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="excell.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/excell.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="e#37#54#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deploy-api.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deploy-api.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="774">
+              <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -91,6 +77,7 @@
         <option value="$PROJECT_DIR$/study.py" />
         <option value="$PROJECT_DIR$/nmapp.py" />
         <option value="$PROJECT_DIR$/uurl.py" />
+        <option value="$PROJECT_DIR$/deploy-api.sh" />
       </list>
     </option>
   </component>
@@ -106,6 +93,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,7 +105,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -244,11 +231,19 @@
       <option name="project" value="LOCAL" />
       <updated>1522474393565</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="remove venv">
+      <created>1522926940235</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1522926940235</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1440" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1375" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -261,14 +256,14 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39851025" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="right" id="R Packages" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -277,9 +272,40 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="step 1" />
     <MESSAGE value="psutil" />
-    <option name="LAST_COMMIT_MESSAGE" value="psutil" />
+    <MESSAGE value="remove venv" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove venv" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/nmapp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#37#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/excell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#37#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nmapp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#37#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nmapp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -290,12 +316,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/study.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/study.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/flasktest.py" />
     <entry file="file://$PROJECT_DIR$/news.py" />
     <entry file="file://$PROJECT_DIR$/flasktest.py" />
@@ -304,12 +324,6 @@
     <entry file="file://$PROJECT_DIR$/templates/home.html" />
     <entry file="file://$PROJECT_DIR$/news.py" />
     <entry file="file://$PROJECT_DIR$/download.py" />
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flasktest.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/study.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -327,11 +341,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nmapp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        <state relative-caret-position="450">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="e#37#48#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/excell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#37#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy-api.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
         </state>
       </provider>
     </entry>
