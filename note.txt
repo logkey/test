@@ -1,0 +1,70 @@
+docker默认镜像拉取地址为国外仓库下载速度较慢，则会报错“net/http: TLS handshake timeout”。
+
+此时，只需要将拉取地址改为国内镜像仓库即可。
+
+标准格式为：
+
+$ docker pull registry.docker-cn.com/myname/myrepo:mytag
+
+例：
+
+$ docker pull registry.docker-cn.com/library/ubuntu:16.04
+
+
+
+为了永久性保留更改，您可以修改 /etc/docker/daemon.json 文件并添加上 registry-mirrors 键值。
+
+{
+  "registry-mirrors": ["https://registry.docker-cn.com"]
+}
+
+docker search tomcat
+docker pull tomcat:7
+docker images #所有镜像
+docker image tomcat:7  #查看REPOSITORY为tomcat:7的镜像
+
+
+WARNING: IPv4 forwarding is disabled. Networking will not work.
+
+
+解决办法：
+# vi /etc/sysctl.conf
+或者
+# vi /usr/lib/sysctl.d/00-system.conf
+添加如下代码：
+    net.ipv4.ip_forward=1
+
+重启network服务
+# systemctl restart network
+
+查看是否修改成功
+# sysctl net.ipv4.ip_forward
+
+如果返回为“net.ipv4.ip_forward = 1”则表示成功了
+
+# 查看所有镜像
+docker images
+
+# 正在运行容器
+docker ps
+
+# 查看docker容器
+docker ps -a
+
+# 启动tomcat:7镜像
+docker run -p 8080:8080 tomcat:7
+
+# 以后台守护进程的方式启动
+docker run -d tomcat:7
+
+# 停止一个容器
+docker stop b840db1d182b
+
+# 进入一个容器
+docker attach d48b21a7e439
+
+# 进入正在运行容器并以命令行交互
+docker exec -it e9410ee182bd /bin/sh
+
+# 以交互的方式运行
+docker run -i -t -p 8081:8080 tomcat:7 /bin/bash
