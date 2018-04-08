@@ -33,7 +33,7 @@ WARNING: IPv4 forwarding is disabled. Networking will not work.
 # vi /usr/lib/sysctl.d/00-system.conf
 添加如下代码：
     net.ipv4.ip_forward=1
-
+     #net.ipv6.conf.all.forwarding=1
 重启network服务
 # systemctl restart network
 
@@ -68,3 +68,37 @@ docker exec -it e9410ee182bd /bin/sh
 
 # 以交互的方式运行
 docker run -i -t -p 8081:8080 tomcat:7 /bin/bash
+
+docker run --privileged=true -v /app/deploy/www:/usr/local/tomcat/webapps/www  -p 8081:8080 tomcat:7 
+
+删除镜像
+
+先删除所有依赖容器，再删除镜像。
+
+后面跟上标签或ID，跟标签会先删除标签（untag），如果没有标签指向镜像，就删除（delete）镜像。
+
+跟ID，删除所有相关标签（untag），再删除（delete）镜像。
+
+sudo docker rmi 2318
+
+sudo docker rmi ubuntu
+删除容器
+
+sudo docker rm e81
+批量操作容器
+
+停止正在运行的容器
+
+sudo docker stop $(sudo docker ps -q)
+
+删除（已经停止的，正在运行的不能删除）容器
+
+sudo docker rm $(sudo docker ps -a -q)
+
+
+
+先确认下docker-proxy绑定的地址是否是IPV6的。我个人的机器上默认情况下是绑定IPV6的，快速解决的办法就是给-p参数制定bind的IP，例如-p 127.0.0.1:30000:30000。然后访问本地的30000端口就可以了。
+
+关于-p默认bind地址是IPV6还是IPV4的问题，可以参考这个问题，讨论很详细，内容比较全面了。
+
+https://github.com/docker/docker/issues/2174
