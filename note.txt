@@ -70,7 +70,8 @@ docker exec -it e9410ee182bd /bin/sh
 docker run -i -t -p 8081:8080 tomcat:7 /bin/bash
 
 docker run --privileged=true -v /app/deploy/www:/usr/local/tomcat/webapps/www  -p 8081:8080 tomcat:7 
-
+docker run -d -p 8080:8080 -p 80:80 --privileged=true  -v /home/jenkins:/usr/local/tomcat/webapps tomcat
+docker rmi -f $(docker images|grep jenkins|awk '{print $3}')
 删除镜像
 
 先删除所有依赖容器，再删除镜像。
