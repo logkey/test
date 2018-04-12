@@ -1,3 +1,8 @@
+建立	 	docker组:
+$sudo	groupadd	docker
+将当前用户加入	 	docker组:
+$sudo	usermod	-aG	docker	$USER
+
 docker默认镜像拉取地址为国外仓库下载速度较慢，则会报错“net/http: TLS handshake timeout”。
 
 此时，只需要将拉取地址改为国内镜像仓库即可。
@@ -18,6 +23,10 @@ $ docker pull registry.docker-cn.com/library/ubuntu:16.04
   "registry-mirrors": ["https://registry.docker-cn.com"]
 }
 
+$	sudo	systemctl	daemon-reload
+$	sudo	systemctl	restart	docker
+
+
 docker search tomcat
 docker pull tomcat:7
 docker images #所有镜像
@@ -31,10 +40,17 @@ WARNING: IPv4 forwarding is disabled. Networking will not work.
 # vi /etc/sysctl.conf
 或者
 # vi /usr/lib/sysctl.d/00-system.conf
+
+容器要想访问外部网络,需要本地系统的转发支持。在Linux	系统中,检查转发是否打开。
+$sysctl	net.ipv4.ip_forward
+net.ipv4.ip_forward	=	1
+如果为	0,说明没有开启转发,则需要手动打开。
+$sysctl	-w	net.ipv4.ip_forward=1
 添加如下代码：
     net.ipv4.ip_forward=1
      #net.ipv6.conf.all.forwarding=1
 重启network服务
+sudo sysctl -p
 # systemctl restart network
 
 查看是否修改成功
@@ -103,3 +119,81 @@ sudo docker rm $(sudo docker ps -a -q)
 关于-p默认bind地址是IPV6还是IPV4的问题，可以参考这个问题，讨论很详细，内容比较全面了。
 
 https://github.com/docker/docker/issues/2174
+
+
+
+docker system df
+docker image ls -f dangling=true
+docker container prune
+清理掉所有处于终止状态的容器
+docker	image	ls	-f	since=mongo:3.2
+docker	image	ls	-f	label=com.example.version=0.1
+docker	image	ls	--format	"{{.ID}}:	{{.Repository}}"
+docker	image	ls	--format	"table	{{.ID}}\t{{.Repository}}\t{{.Tag}}"
+docker image rm 
+docker	image	rm	$(docker	image	ls	-q	redis)
+docker	image	rm	$(docker	image	ls	-q	-f	before=mongo:3.2)
+docker	history	nginx:v2
+-----------------------------------------------------------------------------------------------------
+
+
+Dockerfile	是一个文本文件,其内包含了一条条的指令(Instruction),每一条指令构建一层,
+因此每一条指令的内容,就是描述该层应当如何构建。
+还以之前定制	 	nginx	 	镜像为例,这次我们使用	Dockerfile	来定制。
+在一个空白目录中,建立一个文本文件,并命名为	 	Dockerfile	 :
+$	mkdir	mynginx
+$	cd	mynginx
+$	touch	Dockerfile
+其内容为:
+FROM	nginx
+RUN	echo	'<h1>Hello,	Docker!</h1>'	>	/usr/share/nginx/html/index.html
+这个	Dockerfile	很简单,一共就两行。涉及到了两条指令, 	FROM	 	和	 	RUN	 。
+在	 	Dockerfile	 	文件所在目录执行:
+$	docker	build	-t	nginx:v3	.
+
+除了选择现有镜像为基础镜像外,Docker	还存在一个特殊的镜像,名为	 	scratch	 。这个镜像
+是虚拟的概念,并不实际存在,它表示一个空白的镜像。
+FROM	debian:jessie
+RUN	buildDeps='gcc	libc6-dev	make'	\
+	&&	apt-get	update	\
+	&&	apt-get	install	-y	$buildDeps	\
+	&&	wget	-O	redis.tar.gz	"http://download.redis.io/releases/redis-3.2.5.tar.gz"	\
+	&&	mkdir	-p	/usr/src/redis	\
+	&&	tar	-xzf	redis.tar.gz	-C	/usr/src/redis	--strip-components=1	\
+	&&	make	-C	/usr/src/redis	\
+	&&	make	-C	/usr/src/redis	install	\
+	&&	rm	-rf	/var/lib/apt/lists/*	\
+	&&	rm	redis.tar.gz	\
+	&&	rm	-r	/usr/src/redis	\
+	&&	apt-get	purge	-y	--auto-remove	$buildDeps
+
+
+.dockerignore
+
+
+docker	save	alpine	|	gzip	>	alpine-latest.tar.gz
+docker	load	-i	alpine-latest.tar.gz
+
+du -h --max-depth=1
+docker rename  old_name new_name
+docker run 只在第一次运行时使用，将镜像放到容器中，以后再次启动这个容器时，只需要使用命令docker start 即可。
+docker run相当于执行了两步操作：将镜像放入容器中（docker create）,然后将容器启动，使之变成运行时容器（docker start）。
+
+docker export <CONTAINER ID > > my_container.tar  
+docker import [OPTIONS] file|URL|- [REPOSITORY[:TAG]]
+docker	volume	create	my-vol
+docker	volume	ls
+docker	volume	inspect	my-vol
+
+
+Dockerfile中加入如下设置：
+RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
+&& echo 'Asia/Shanghai' >/etc/timezone
+
+or
+docker run -d --name demo-service --rm -p 8084:8080 -v /usr/local/tomcat/logs/tomcat8080:/usr/local/tomcat/logs -v /etc/localtime:/etc/localtime demo-service:1.0.0
+
+
+
+
+docker	network	create	-d	bridge	my-net
