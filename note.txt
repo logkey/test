@@ -1,3 +1,5 @@
+﻿
+filename.`date +%Y%m%d%H%M`
 建立	 	docker组:
 $sudo	groupadd	docker
 将当前用户加入	 	docker组:
@@ -197,3 +199,34 @@ docker run -d --name demo-service --rm -p 8084:8080 -v /usr/local/tomcat/logs/to
 
 
 docker	network	create	-d	bridge	my-net
+
+
+
+
+ tar -zxvf jdk-8u121-linux-x64.tar.gz
+ vi /etc/profile
+
+export JAVA_HOME=/usr/java/jdk1.8.0_121
+export CLASSPATH=.:%JAVA_HOME%/lib/dt.jar:%JAVA_HOME%/lib/tools.jar
+export PATH=$PATH:$JAVA_HOME/bin
+
+source /etc/profile
+
+unzip apache-tomcat-9.0.0.M18-src.tar.gz
+
+cd apache-tomcat-8.5.12/bin
+
+
+chmod 755 *.sh
+
+#查看tomcat所在文件路径 /usr/java/apache-tomcat-8.5.12
+
+#添加环境变量
+
+vi /etc/profile
+
+#添加
+export CATALINA_HOME=/usr/java/apache-tomcat-8.5.12
+export CATALINA_BASE=/usr/java/apache-tomcat-8.5.12
+
+source /etc/profile

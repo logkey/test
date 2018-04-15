@@ -2,13 +2,13 @@
 #filename deploy-api.sh
 set -x
 export JAVA_HOME=/opt/jdk1.7.0_80
-export TOMCAT_HOME=/opt/apache-tomcat-test-jxpt-10000
-api_pid=$(ps -ef|/opt/apache-tomcat-test-jxpt-10000|grep server-test|awk '{print $2}')
+export TOMCAT_HOME=/opt/tomcat7
+api_pid=$(ps -ef|/opt/tomcat7|grep server-test|awk '{print $2}')
 for temp_pid in ${api_pid}
 do
     kill -9 ${temp_pid}
 done
-war_file="/home/ucmed/jenkins/root/ROOT.war"
+war_file="/home/ROOT.war"
 if [ -f "$war_file" ];
 then
     echo "War file exists, deploy and start the server."
@@ -37,8 +37,8 @@ else
 fi
 
 cd ${TOMCAT_HOME}/bin
-chmod 777 *.sh
-
-set +x
+#chmod 777 *.sh
+chmod +x *.sh
+#set +x
 
 /bin/bash ${TOMCAT_HOME}/bin/startup.sh
