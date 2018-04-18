@@ -1,0 +1,10 @@
+str.title() 单词首字母大写
+str.upper() 大写
+str.lower() 小写
+制表符\t   换行符\n
+print("Languages:\n\tPython\n\tC\n\tJavaScript")
+str.rstrip([chars]) 删除 string 字符串尾的指定字符（默认为空格）.
+str.lstrip([chars]) 删除 string 字符串首的指定字符（默认为空格）.
+str.strip([chars])  删除 string 字符串首尾的指定字符（默认为空格）.
+（2.0-1.1）= 0.8999999999999999
+ 0.3*3=0.8999999999999999
