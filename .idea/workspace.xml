@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57c99131-af53-486f-bbc0-24aaa213f0ff" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/sh.tar" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/pynote.txt" afterPath="$PROJECT_DIR$/pynote.txt" />
+      <change beforePath="$PROJECT_DIR$/temp.py" afterPath="$PROJECT_DIR$/temp.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,21 +26,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="temp.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="temp.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/temp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            <state relative-caret-position="347">
+              <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pynote.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pynote.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pynote.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="250">
+              <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -76,8 +79,9 @@
         <option value="$PROJECT_DIR$/deploy-api.sh" />
         <option value="$PROJECT_DIR$/note.txt" />
         <option value="$PROJECT_DIR$/de.py" />
-        <option value="$PROJECT_DIR$/temp.py" />
         <option value="$PROJECT_DIR$/venv/pynote.txt" />
+        <option value="$PROJECT_DIR$/pynote.txt" />
+        <option value="$PROJECT_DIR$/temp.py" />
       </list>
     </option>
   </component>
@@ -331,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524051256602</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="111">
+      <created>1524051430005</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1524051430005</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -607,18 +618,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp.py">
+    <entry file="file://$PROJECT_DIR$/pynote.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        <state relative-caret-position="250">
+          <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pynote.txt">
+    <entry file="file://$PROJECT_DIR$/temp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        <state relative-caret-position="347">
+          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
           <folding />
         </state>
       </provider>

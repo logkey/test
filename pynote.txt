@@ -6,5 +6,29 @@ print("Languages:\n\tPython\n\tC\n\tJavaScript")
 str.rstrip([chars]) 删除 string 字符串尾的指定字符（默认为空格）.
 str.lstrip([chars]) 删除 string 字符串首的指定字符（默认为空格）.
 str.strip([chars])  删除 string 字符串首尾的指定字符（默认为空格）.
-（2.0-1.1）= 0.8999999999999999
- 0.3*3=0.8999999999999999
+(2.0-1.1)= 0.8999999999999999
+0.3*3=0.8999999999999999   ------------http://0.30000000000000004.com/
+import this
+
+[]列表：  type 'list'
+         append()  insert()   del hello[0]     pop() 可删除列表末尾的元素，并让你能够接着使用它hel=hello.pop()
+         remove('123')    sort()字母顺序  sort(reverse=True)反序  sorted()临时排序
+         reverse()反转排序     len()      [x:y]   [:]复制列表
+ range(x,y) x<=?<y
+ list(range(1,6))   type()
+ 两个星号（** ）表示乘方运算   %	取模-返回除法的余数    //	取整除 - 返回商的整数部分
+ 数字列表min() max() sum()
+
+()元组： type 'tuple' 不能修改元组的元素，但可以给存储元组的变量赋值            sorted()
+
+if:  and,or,in,not in    if-elif-else
+
+{}字典：  type 'dict'  字典 是一系列键—值对 alien_0 = {'color': 'green', 'points': 5}可将任何Python对象用作字典中的值
+        print(alien_0['color'])
+        alien_0['x_position'] = 0
+        alien_0['y_position'] = 25
+        print(alien_0)
+        del alien_0['points']
+
+
+
