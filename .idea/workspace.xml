@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57c99131-af53-486f-bbc0-24aaa213f0ff" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/temp.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/venv/pynote.txt" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/venv/pynote.txt" afterPath="$PROJECT_DIR$/pynote.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,10 +35,10 @@
         </entry>
       </file>
       <file leaf-file-name="pynote.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/venv/pynote.txt">
+        <entry file="file://$PROJECT_DIR$/pynote.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -115,16 +114,6 @@
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -139,6 +128,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\py\test" />
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/templates" />
     </key>
@@ -328,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524044972618</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="111">
+      <created>1524051137634</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1524051137634</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -612,10 +609,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/pynote.txt">
+    <entry file="file://$PROJECT_DIR$/pynote.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
           <folding />
         </state>
       </provider>
