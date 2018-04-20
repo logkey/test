@@ -46,5 +46,5 @@ while 'cat' in pets:
     pets.remove('cat')
 print(pets)
 
-
+def :形参使用默认值时，在形参列表中必须先列出没有默认值的形参，再列出有默认值的实参。这让Python依然能够正确地解读位置实参。
 
