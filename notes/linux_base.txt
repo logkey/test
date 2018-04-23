@@ -57,5 +57,30 @@ su [user]切换到其他用户，但是不切换环境变量，su - [user]则是完整的切换到新的用户
 which 命令，查看命令所在文件位置
 /dev  /sda   tty终端   /zero零设备  /null空设备类似回收站  /random产生随机数
 /root root用户的home
-/home 普通用户家base目录
-/proc 进程
+/home 普通用户家base目录  useradd dog
+/proc 进程，虚拟文件
+/usr 系统文件   /usr/local 软件目录  /usr/bin 
+/boot 启动，内核
+/lib 库文件
+/var 数据库、日志、邮件......
+/media 移动设备挂载点  /mnt 手动挂载点  /misc  automount进程挂载
+tree
+cd - 返回上次目录  cd 回家目录
+
+gedit,vi,vim,nano
+yum install vim-enhanced
+a,i,o,A,I,O
+esc    hjkl左上下右 0行首 $行尾  gg第一行 G最后行 3G第三行 /string查找（n后找，N上找，循环）
+        /^string行开头   /string$行结尾
+	y复制 yy 3yy ygg yG 以行为单位
+	d删除 dd 3dd dgg dG 以行为单位
+	p粘贴
+	x删除光标所在字符
+	D从光标处删除到行尾
+	u  撤销
+	^r 重做
+	r修改字符
+:
+v,V,^v可视、可视行、可视块
+R替换模式     ^p自动补全
+
