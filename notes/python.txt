@@ -38,7 +38,9 @@ if:  and,or,in,not in    if-elif-else
         for value in set(dict.values()):set()集合 类似于列表,但每个元素都必须是独一无二的：去重
 
 python2.x中只用raw_input();        python3.x中用户输入使用input()     --raw_input和input都默认接收的是字符
+
 while True ......break......continue
+
 for 循环是一种遍历列表的有效方式，但在for 循环中不应修改列表，否则将导致Python难以跟踪其中的元素。要在遍历列表的同时对其进行修改，可使用while 循环。
 
 pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
@@ -46,5 +48,39 @@ while 'cat' in pets:
     pets.remove('cat')
 print(pets)
 
-def :形参使用默认值时，在形参列表中必须先列出没有默认值的形参，再列出有默认值的实参。这让Python依然能够正确地解读位置实参。
+def 函数:形参使用默认值时，在形参列表中必须先列出没有默认值的形参，再列出有默认值的实参。这让Python依然能够正确地解读位置实参。
+
+test=''     if test:    Python将空字符串解读为False,非空字符串解读为True
+
+要将列表的副本传递给函数，可以像下面这样做：
+function_name(list_name[:])
+切片表示法[:] 创建列表的副本。
+
+def make_pizza(dog,*toppings):  形参*创建空元祖，可传递任意数量的实参
+"""打印顾客点的所有配料"""
+    print(toppings)
+make_pizza('pepperoni')
+make_pizza('mushrooms', 'green peppers', 'extra cheese')
+
+def build_profile(first, last, **user_info):  形参**,创建一个空字典,接受任意数量的键—值对;
+
+模块 是扩展名为.py的文件
+import  module_name， module_name.function_name()
+from module_name import function_name，这样调用无需使用句点 function_name()
+使用as 给函数、模块指定别名 from module_name import function_name as fn,import module_name as mn
+使用星号（* ）运算符可让Python导入模块中的所有函数：from module_name import *
+
+给形参指定默认值时，等号两边不要有空格：
+def function_name(parameter_0, parameter_1='default value')
+对于函数调用中的关键字实参，也应遵循这种约定：
+function_name(value_0, parameter_1='value')
+
+建议代码行的长度不要超过79字符
+
+根据类来创建对象被称为实例化,根据约定，在Python中，首字母大写的名称指的是类
+方法__init__(),类中的函数称为方法,初始化属性def __init__(self, name, age):self.name = name;self.age = age
+
+在Python 2.7中创建类时，需要做细微的修改——在括号内包含单词object ：class ClassName(object):
+
+
 
