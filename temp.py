@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+#coding=UTF-8
+
 aaaa=['123','sdfsfs','4342','vcbr1']
 bbbb=[]
 while aaaa:
