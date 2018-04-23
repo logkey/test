@@ -1,2 +1,3 @@
-# test
-20180405 push
+#!/usr/bin/env python
+#coding=UTF-8
+
