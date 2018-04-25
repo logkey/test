@@ -1,4 +1,4 @@
-str.title() 单词首字母大写
+﻿str.title() 单词首字母大写
 str.upper() 大写
 str.lower() 小写
 制表符\t   换行符\n
@@ -81,6 +81,17 @@ function_name(value_0, parameter_1='value')
 方法__init__(),类中的函数称为方法,初始化属性def __init__(self, name, age):self.name = name;self.age = age
 
 在Python 2.7中创建类时，需要做细微的修改——在括号内包含单词object ：class ClassName(object):
-
-
+class Car(object):
+	def __init__(self, make, model, year):
+继承：创建子类时，父类必须包含在当前文件中，且位于子类前面,子类的方法__init__() 需要父类施以援手
+class ElectricCar(Car):
+	def __init__(self, make, model, year):
+		super().__init__(make, model, year)
+处的super() 是一个特殊函数，帮助Python将父类和子类关联起来。这行代码让Python调用ElectricCar 的父类的方法__init__() ，让ElectricCar 实例包含父类的所
+有属性。父类也称为超类 （superclass），名称super因此而得名。
+在Python 2.7中，函数super() 需要两个实参：子类名和对象self
+class ElectricCar(Car):
+	def __init__(self, make, model, year):
+		super(ElectricCar, self).__init__(make, model, year)
+		
 
