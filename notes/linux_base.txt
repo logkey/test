@@ -123,3 +123,24 @@ mkdir -pv /home/{doghome/{dog1,dog2},cathome} 创建目录包括上级
 cp -rv /home/dog /home/cat 递归复制
 cp -rfv x y z /home 复制多个文件，  -f  强制
 \cp -f /etc/tmp   -----type -a cp
+cp -rf /etc/sysconfig/network-scripts/{ifcfg-em1,ifcfg-em1.bak}
+cp -rf /etc/sysconfig/network-scripts/ifcfg-em1{,.bak}
+cat tac less more head tail tailf grep
+cat -n 行号 -A换行符
+yum install dos2unix 转换文本格式（win记事本）
+wc -l 统计行数
+grep '^root','sh$' 过滤以_开头结尾的行
+grep 'failure' /var/log/secure 检查非法登陆
+------------------------------------------------
+id xx 查看用户信息
+/etc/group
+/etc/passwd	用户名：x：uid：gid：描述：HOME：shell
+/etc/shadow	$id$salt$encrypted$最后修改时间:最小时间间隔:最大时间间隔:警告时间:不活动时间:失效时间:标志
+		空无口令，*锁定,!!密码过期,$6 SHA-512, $1 MD5 ,$2 Blowfish ,$5 SHA-256  1970年1月1日
+man 5 passwd,man 5 shadow,man 5 group,man3 crypt
+系统约定 uid:0 特权用户 	1~499系统用户 500+ 普通用户
+groupadd(-g),groupdel
+useradd,usermod,userdel
+passwd,chage
+
+
